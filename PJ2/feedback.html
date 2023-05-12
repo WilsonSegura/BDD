@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="stylesheet" href="css/feedbackStyle.css">
+    <link rel="stylesheet" href="feedback.js">
+    <title>Feedback</title>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <div class="header">
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" autocomplete="off">
+                    <button type="submit"><img src="https://trello.com/1/cards/6415fa7fa0463b928860f307/attachments/643dc8e57d8a22909cc4361c/previews/643dc8e67d8a22909cc43624/download/LupaRoxa.png"></button>
+                </div>
+            </div>
+
+
+        <nav class="header-botoes">
+            <a href="doacaoMonetaria.html">
+                <button type="submit" class="btn">Doação Monetária</button>
+            </a>
+            <a href="requerimento.html">
+                <button type="submit" class="btn">Requisitar</button>
+            </a>
+            <a href="dadosDoacao.html">
+                <button type="submit" class="btn">Doar Produtos</button>
+            </a>
+        </nav>
+
+            
+            <div class="PopUpLogin">
+                <!-- Logo do Site -->
+                <a href="#" id="linkImgLogo">
+                    <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px" id="logo">
+                </a>
+                <button class="open-button" onclick="openForm()">Fazer Login</button>
+                
+                    <!-- The form -->
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Senha" name="psw" required>
+
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                        </form>
+                    </div>  
+                    <script>
+                        function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                        }
+                        
+                        function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+            </div>    
+    </div>
+    </div>
+
+
+    <!-- Corpo-->
+
+    <div class="corpo">
+
+        <div id="foto_feedback">
+            <img src="img/fotoUsuario/foto_usuario.png" alt="foto do úsuario" id="foto_usuario">
+        </div>
+
+        <div id="agradecimento_feedback"> 
+            <h3>
+                ''[nome do usuário] com sua generosidade e bondade, somos capazes de fornecer ajuda e apoio para aqueles que mais precisam, As suas doações nos permitem continuar trabalhando em nossos projetos e ajudar a criar um impacto positivo em nossa comunidade e no mundo ao nosso redor.''
+            </h3>
+            <h2>
+                Com nossos sinceros agradecimentos: Ajuda Sem Fronteiras.
+            </h2>
+        </div>
+
+
+        <div id="rattingStars_feedback"> 
+            <h1>
+                Nos dê seu feedback!
+            </h1>
+            
+            <div class="classificacao">
+                <input type="radio" id="star5" name="classificacao" value="5" />
+                <label for="star5" title="estrela 5">5 estrela</label>
+                <input type="radio" id="star4" name="classificacao" value="4" />
+                <label for="star4" title="estrela 4">4 estrela</label>
+                <input type="radio" id="star3" name="classificacao" value="3" />
+                <label for="star3" title="estrela 3">3 estrela</label>
+                <input type="radio" id="star2" name="classificacao" value="2" />
+                <label for="star2" title="estrela 2">2 estrela</label>
+                <input type="radio" id="star1" name="classificacao" value="1" />
+                <label for="star1" title="estrela 1">1 estrela</label>
+              </div>
+        </div>
+
+        <div class="feedback">
+            <p>Feedback:</p>
+            <textarea id="FeedbackTexto" name="FeedbackTexto"></textarea>
+            <a href="cadastro.html">
+                <button type="submit" class="btn">Home</button>
+            </a>
+        </div>
+        
+
+        
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+    <div class="wrapper">
+        <div class="allFooter">
+
+            <!-- Email / Assinar-->
+
+            <div class="textoAssinar">
+                <h3 id="txth3">Fique conectado</h3>
+                <p id="txtp">Receba atualizações e novas<br>notificações sobre nosso projeto.</p>
+
+                
+                    <form action="Assinar o Email" id="allEmailButton">
+                        <input type="email" id="txtEmail" placeholder="Email:">
+                        <button id="elemButton">Assinar</button>
+                    </form>
+
+                <nav class="allRedesSociais">
+                    <a href="#">
+                        <img id="icon01" src="img/RedesSocias/Instagram.png" alt="iconInstagram">
+                    </a>
+                    <a href="#">
+                        <img id="icon02" src="img/RedesSocias/Whatsapp.png" alt="iconWhatsapp">
+                    </a>
+                    <a href="#">
+                        <img id="icon03" src="img/RedesSocias/Facobook.png" alt="iconFacebook">
+                    </a>
+                    <a href="#">
+                        <img id="icon04" src="img/RedesSocias/Outlook.png" alt="iconOutlook">
+                    </a>
+                    <a href="#">
+                        <img id="icon05" src="img/RedesSocias/Twitter.png" alt="iconTwitter">
+                    </a>
+                    <a href="#">
+                        <img id="icon06" src="img/RedesSocias/Gmail.png" alt="iconGmail">
+                    </a>
+                </nav>
+            </div>
+
+
+            <!-- Logo / Name -->
+            
+                <nav class="logoName">
+                    <a href="#">
+                        <img id="logoFooter" src="img/Logo/Logo.png" alt="Logo Do footer">
+                    </a>
+                    <p id="txtLogoName01">A doação transforma, o amor<br> abstrato em um ato concreto.</p>
+                    <p id="txtLogoName02">-Ajuda Sem Fronteiras</p>
+                </nav>
+
+                <!-- Apoiadores -->
+
+                <div class="apoiadores">
+                    <p id="txtApoiadores">Empresas que apoiam nossa campanha</p>
+                    
+                    <nav class="allApoiadoresTop">
+                        <a href="#">
+                            <img id="iconApoiadores01" src="img/Apoiadores/PagSeguro.png" alt="Icon Apoiadores PagSeguro">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores02" src="img/Apoiadores/AmericanExpress.png" alt="Icon Apoiadores AmericanExpress">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores03" src="img/Apoiadores/Santander.png" alt="Icon Apoiadores Santander">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores04" src="img/Apoiadores/Nubank.png" alt="Icon Apoiadores Nubank">
+                        </a>
+                    </nav>
+                    <nav class="allApoiadoresEnd">
+                        <a href="#">
+                            <img id="iconApoiadores05" src="img/Apoiadores/PayPal.png" alt="Icon Apoiadores PayPal">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores06" src="img/Apoiadores/BancodoBrasil.png" alt="Icon Apoiadores BancodoBrasil">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores07" src="img/Apoiadores/Bradesco.png" alt="Icon Apoaidores Bradesco">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores08" src="img/Apoiadores/PicPay.png" alt="Ico Apoaidores PicPay">
+                        </a>
+                    </nav>
+                </div>
+        </div>   
+    </div> 
+    </footer>
+    <!-- Coryright -->
+    <div id="copyright">
+    <a href="#"><p id="txtcoryright">copyright © 2023<br>Todos os direitos reservados</p></a>
+    </div>        
+</body>
+</html>

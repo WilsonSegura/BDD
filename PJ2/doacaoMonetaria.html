@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/doacaoMonetaria.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png"/>
+    
+    <title>Ajuda Sem Fronteiras</title>
+</head>
+<body>
+    <!-- Header -->
+        <div class="header">
+            <div class="logo-barra">
+                <div class="search-box">
+                    <div class="row">
+                        <input type="text" id="input-box" autocomplete="off">
+                        <button type="submit"><img src="https://trello.com/1/cards/6415fa7fa0463b928860f307/attachments/643dc8e57d8a22909cc4361c/previews/643dc8e67d8a22909cc43624/download/LupaRoxa.png"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="header-botoes">
+                <a href="home.html">
+                    <button type="submit" class="btn">Home</button>
+                </a>
+                <a href="requerimento.html">            
+                    <button type="submit" class="btn">Requisitar</button>
+                </a>
+            </nav>
+
+            <div class="PopUpLogin">
+                <!-- Logo do Site -->
+                <a href="#" id="linkImgLogo">
+                    <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" height="70px" width="70px" id="logo">
+                </a>
+                <button class="open-button" onclick="openForm()">Fazer Login</button>
+                
+                    <!-- The form -->
+                    <div class="form-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Senha" name="psw" required>
+
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                        </form>
+                    </div>  
+                    <script>
+                        function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                        }
+                        
+                        function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+            </div>
+        </div>
+    
+        <!-- Body -->
+    <div class="corpo">
+        <div class="wrapperCorpo">
+            <div class="allRegistro">
+                <div class="registro">
+                    <form action="CategoriaCampanhas">
+                        <h1 id="tituloCorpo">Dados de doação monetária</h1>
+                        <select class="campanhas">
+                            <option value="0" >Campanhas</option>
+                            <option value="1">Saúde</option>
+                            <option value="2">Funeral</option>
+                            <option value="3">Emergência</option>
+                            <option value="4">Organização sem fins lucrativos</option>
+                            <option value="5">Emergência Financeira</option>
+                            <option value="6">Animais</option>
+                        </select>
+                    </form>
+
+                    <form action="beneficente">
+                        <select class="beneficentes" aria-placeholder="Beneficentes">
+                            <option value="0">Beneficentes</option>
+                            <option value="1">exemplo</option>
+                            <option value="2">exemplo</option>
+                        </select>
+                    </form>
+
+                    <form action="Monetario">
+                        <input type="number" placeholder="R$ 0,00" id="inputMonetario">
+                    </form>
+
+
+                    <!-- Icon de Serviço -->
+                    <div class="iconServico">
+                        <nav>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico01" src="img/Icon Doação Monetaria/Banco do Brasil.png" alt="Banco do Brasil">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico02" src="img/Icon Doação Monetaria/Visa.png" alt="Visa">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico03" src="img/Icon Doação Monetaria/Elo.png" alt="Elo">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico04" src="img/Icon Doação Monetaria/Maestro.png" alt="Maestro">
+                            </a>
+                            <a href="#" class="linkServico">
+                                <img id="iconServico05" src="img/Icon Doação Monetaria/MasterCard.png" alt="MasterCard">
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="imgDoador">
+                    <img src="img/fotoUsuario/imagem usuario.png" alt="">
+                    <h2 id="txtH3Doador">(Name) Doador</h2>
+                </div>
+            </div>
+
+            
+            <!-- Cartão -->
+            <div class="cartao">
+                <img src="img/Fundo do Cartão/Cartão.png" alt="Fundo do Cartão">
+                <form class="superiorTextoInput">
+                    <h2 id="txtTituloCartao">Nome do cartão</h2>
+                    <input type="text" id="txtNameCartao" placeholder="XXXXXXXXXXXXXXXXX">
+                </form>
+
+                <form action=""  id="txtTitulo">
+                    <h2 id="txtNumeroCartao">Número do Cartão</h2>
+
+                    <h2 id="txtValidoAte">Valido até</h2>
+
+                    <h2 id="txtCVV">CVV</h2>
+                </form>
+
+                <form action="Número do cartão / Valido até / CVV" class="superiorNumeroValidoCvv">
+                    
+                    <input type="number" name="numeroCartao" id="numeroCartao" placeholder="XXXX XXXX XXXX XXXX" pattern="[\d]{4} [\d]{4} [\d]{4} [\d]{4}" onKeyPress="if(this.value.length==16) return false;">
+
+                    
+                    <input type="text" name="Valido" id="dateValido" placeholder="00/00" onKeyPress="if(this.value.length==7) return false;">
+
+                    
+                    <input type="number" id="cvv" placeholder="000" onKeyPress="if(this.value.length==3) return false;">
+                </form>
+            </div>
+
+
+            <!-- Código Pix -->
+            <div class="descricaoPix">
+                <h2 id="txtDescricaoPix">Doe através do Pix!</h2>
+                <div class="allDescricao">
+
+                    <img src="img/Pix/Img Pix 04.png" alt="Imagem Pix" id="imgPix">
+
+                    <div class="allTextoDescricaoPix">
+                        <p>Nome: Ajuda Sem Fronteiras</p>
+                        <br>
+                        <p>Banco: 007 Inter</p>
+                        <br>
+                        <p>Chave Pix: 39.421.539/0001-50</p>
+                    </div>
+
+                    <img src="img/Pix/Rectangle cod QR 04.png" alt="Imagem QRCode" id="imgQRCode">
+                </div>
+            </div>
+
+
+            <!-- Botão Doar-->
+            <div class="mainButton">
+                <a href="feedback.html">
+                    <button type="submit" class="btnDoar">Doar</button>
+                </a>
+            </div>
+        </div>
+    </div>      
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wrapperFooter">
+            <div class="allFooter">
+
+                <!-- Email / Assinar-->
+
+                <div class="textoAssinar">
+                    <h3 id="txth3">Fique conectado</h3>
+                    <p id="txtp">Receba atualizações e novas<br>notificações sobre nosso projeto.</p>
+
+                    
+                        <form action="Assinar o Email" id="allEmailButton">
+                            <input type="email" id="txtEmail" placeholder="Email:">
+                            <button id="elemButton">Assinar</button>
+                        </form>
+
+                    <nav class="allRedesSociais">
+                        <a href="#">
+                            <img id="icon01" src="img/RedesSocias/Instagram.png" alt="iconInstagram">
+                        </a>
+                        <a href="#">
+                            <img id="icon02" src="img/RedesSocias/Whatsapp.png" alt="iconWhatsapp">
+                        </a>
+                        <a href="#">
+                            <img id="icon03" src="img/RedesSocias/Facobook.png" alt="iconFacebook">
+                        </a>
+                        <a href="#">
+                            <img id="icon04" src="img/RedesSocias/Outlook.png" alt="iconOutlook">
+                        </a>
+                        <a href="#">
+                            <img id="icon05" src="img/RedesSocias/Twitter.png" alt="iconTwitter">
+                        </a>
+                        <a href="#">
+                            <img id="icon06" src="img/RedesSocias/Gmail.png" alt="iconGmail">
+                        </a>
+                    </nav>
+                </div>
+
+
+                <!-- Logo / Name -->
+                
+                    <nav class="logoName">
+                        <a href="#">
+                            <img id="logoFooter" src="img/Logo/Logo.png" alt="Logo Do footer">
+                        </a>
+                        <p id="txtLogoName01">A doação transforma, o amor<br> abstrato em um ato concreto</p>
+                        <p id="txtLogoName02">-Ajuda Sem Fronteiras</p>
+                    </nav>
+
+                    <!-- Apoiadores -->
+
+                    <div class="apoiadores">
+                        <p id="txtApoiadores">Empresas que apoiam nossa campanha</p>
+                        
+                        <nav class="allApoiadoresTop">
+                            <a href="#">
+                                <img id="iconApoiadores01" src="img/Apoiadores/PagSeguro.png" alt="Icon Apoiadores PagSeguro">
+                            </a>
+                            <a href="#">
+                                <img id="iconApoiadores02" src="img/Apoiadores/AmericanExpress.png" alt="Icon Apoiadores AmericanExpress">
+                            </a>
+                            <a href="#">
+                                <img id="iconApoiadores03" src="img/Apoiadores/Santander.png" alt="Icon Apoiadores Santander">
+                            </a>
+                            <a href="#">
+                                <img id="iconApoiadores04" src="img/Apoiadores/Nubank.png" alt="Icon Apoiadores Nubank">
+                            </a>
+                        </nav>
+                        <nav class="allApoiadoresEnd">
+                            <a href="#">
+                                <img id="iconApoiadores05" src="img/Apoiadores/PayPal.png" alt="Icon Apoiadores PayPal">
+                            </a>
+                            <a href="#">
+                                <img id="iconApoiadores06" src="img/Apoiadores/BancodoBrasil.png" alt="Icon Apoiadores BancodoBrasil">
+                            </a>
+                            <a href="#">
+                                <img id="iconApoiadores07" src="img/Apoiadores/Bradesco.png" alt="Icon Apoaidores Bradesco">
+                            </a>
+                            <a href="#">
+                                <img id="iconApoiadores08" src="img/Apoiadores/PicPay.png" alt="Ico Apoaidores PicPay">
+                            </a>
+                        </nav>
+                    </div>
+            </div>   
+        </div> 
+    </footer>
+    <!-- Coryright -->
+    <div id="copyright">
+        <a href="#"><p id="txtcoryright">copyright © 2023<br>Todos os direitos reservados</p></a>
+    </div>
+
+    <script src="js/doacaoMonetaria.js"></script>
+</body>
+</html>

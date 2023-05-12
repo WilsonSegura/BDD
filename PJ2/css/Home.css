@@ -1,0 +1,836 @@
+* {
+  font-family: 'Anuphan', sans-serif;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url("https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6453ff836aeccd126b11af2d/previews/6453ff836aeccd126b11af3a/download/Green_Illustrated.png");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-barrapesq img {
+    width: 100px;
+    height: 100px;
+    margin: 0px 43px 0px 0px;
+}
+
+.logo-barrapesq {
+    display: flex;
+    align-items: center;
+}
+.header h1 {
+    font-size: 22px;
+    color: green;
+    text-align: center;
+    padding: 5px;
+  
+}
+
+.search-box{
+    width: 1000px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 25px; 
+    justify-content: right;
+    margin: auto;  
+    border-style: solid;
+    border-color: #B063FF ;
+    font-size: 18px;
+    outline: none;
+  }
+  
+  .search-box input {
+    background: #fff;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: auto;
+    font-size: 25px;
+    height: 62px;
+    width: 1070px;
+    color: #B063FF;
+    margin: auto;
+    border-radius: 50px;
+  }
+
+  .btn {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    width: 220px;
+    height: 37px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    background-color: #506C53;
+    color: white;
+  }
+
+
+/*
+  Titulo de Doações mais Requisitadas
+*/
+
+.backgroundDoacaoRequisitadas {
+  margin-top: 58px;
+}
+
+#txtTituloDoacaoRequisitadas {
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 46px;
+
+  margin: 0px 0px 50px 0px;
+
+  color: #506C53;
+
+  animation: HeroFullIllustration_fadeIn__B12D_ .4s linear .4s forwards;
+}
+
+/*
+  Carrossel
+*/
+
+.doacaoRequisitadas {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperDoacaoRequisitadas {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapperDoacaoRequisitadas i {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 5rem;
+  transform: translateY(-50%);
+  
+  color: #506C53;
+}
+
+.wrapperDoacaoRequisitadas i:first-child {
+  left: -100px;
+}
+
+.wrapperDoacaoRequisitadas i:last-child {
+  right: -100px;
+}
+
+.wrapperDoacaoRequisitadas .carrosselDoacaoRequisitadas {
+  display: grid;
+  align-items: start;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carrosselDoacaoRequisitadas::-webkit-scrollbar {
+  display: none;
+}
+
+.carrosselDoacaoRequisitadas .no-transition {
+  scroll-behavior: auto;
+}
+
+.carrosselDoacaoRequisitadas.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carrosselDoacaoRequisitadas .caixa {
+  cursor: grab;
+  user-select: none;
+}
+
+.carrosselDoacaoRequisitadas .caixa:active {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.carrosselDoacaoRequisitadas .dragging .caixa {
+  cursor: grab;
+  user-select: none;
+}
+
+.carrosselDoacaoRequisitadas .caixa {
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.caixa .img img {
+  width: 327px;
+  height: 227px;
+
+  border: solid 5px #91CB96;
+  border-radius: 7px;
+}
+
+.caixa h2 {
+  text-align: center;
+  margin: 5px 0 0px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: #273528;
+}
+
+
+@media screen and (max-width: 900px) {
+  .wrapperDoacaoRequisitadas .carrosselDoacaoRequisitadas {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapperDoacaoRequisitadas .carrosselDoacaoRequisitadas {
+    grid-auto-columns: 100%;
+  }
+}
+
+/*
+  Categorias de Campanhas
+*/
+
+.categoriacampanha {
+  background-color: #91CB96;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.colunas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.categoriacampanha h2{
+  margin: 10px;
+  text-align: center;
+  max-width: 327px;
+  color: #506C53;
+  font-size: 22px;
+}
+
+.categoriacampanha h1 {
+  color: #273528;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.colunas img{
+  opacity: 100%;
+  width: 327px;
+  height: 227px;
+  border-style: solid;
+  border-radius: 7px;
+  border-color: seagreen;
+}
+
+.colunas img:hover{
+  opacity: 0.1;
+  transition: 0.3s;
+}
+
+.texto{
+  color: #506C53;
+  margin: 5px;
+  width: 330px;
+  height: 230px;
+}
+
+.texto h3{
+  opacity: 0%;  
+  position: absolute;
+  font-size: 15px;
+  text-align: center;
+  max-width: 325px;
+  max-height: 227px;
+  text-align: -webkit-center;
+  padding-top: 50px;
+}
+
+.colunas:hover .texto {
+  text-align: center;
+  opacity:100;
+  user-select: none;
+  background-color: white;
+  border-radius: 7px;
+  border-style: solid;
+  border: #506C53;
+}
+
+.texto:hover h3{
+  text-align: center;
+  position: absolute;
+  width: 335px;
+  padding-top: 90px;
+  opacity: 100; 
+  color: #506C53;
+  text-align: -webkit-center;
+  padding-top: 50px;
+
+}
+
+
+/*
+  Perguntas Frequentes
+*/
+
+.backgroundPerguntasFrequentes {
+  padding: 10px;
+  margin-top: 75px;
+}
+
+.caixaPerguntasFrequentes {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloPerguntasFrequentes {
+  font-size: 3rem;
+  margin: 0rem 0rem 1rem 0rem;
+
+  color: #506C53;
+}
+
+.perguntasFrequentes {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #273528;
+  cursor: pointer;
+}
+
+.perguntas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perguntas h3 {
+  margin: 0%;
+  padding: 0%;
+
+  color: #273528;
+  font-size: 1.8rem;
+}
+
+.perguntas i {
+  font-size: 2rem;
+  color: #506C53;
+}
+
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.resposta p {
+  padding-top: 1rem;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.perguntas.active .resposta {
+  max-width: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.perguntas.active i {
+  transform: rotate(180deg);
+}
+
+.perguntas i {
+  transition: transform 0.4s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*
+  Quem Somos
+*/
+
+.backgroundQuemSomos {
+  margin-top: 75px;
+}
+
+.wrapperQuemSomos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: 1320px;
+  margin: auto;
+  
+}
+
+.imgQuemSomos img {
+  float: left;
+  width: 500px;
+  height: 380px;
+
+  object-fit: cover;
+}
+
+.allTextoQuemSomos  {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.allTextoQuemSomos h1 {
+  font-size: 3rem;
+  color: #18315A;
+}
+
+.textoQuemSomos p {
+  font-size: 18px;
+  width: 700px;
+
+}
+
+
+/*
+  Footer
+*/
+
+#footer {
+  margin-top: 75px;
+  background-color: #A9E8AF;
+
+  padding: 10px;
+}
+
+/*
+  Wrapper
+*/
+
+.wrapper {
+  max-width: 1320px;
+  margin: auto;
+}
+
+/*
+  All Foooter
+*/
+
+.allFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 30px;
+}
+
+.allFooter > div {
+  width: 400px;
+}
+
+
+/*
+  Email / Assinar
+*/
+.textoAssinar {
+  display: flex;
+  flex-direction: column;
+}
+
+#allEmailButton {
+  display: flex;
+  flex-direction: row;
+}
+
+#txth3 {
+  display: flex;
+  position: static;   
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  justify-content: center;
+
+  color: #273528;
+
+  margin: 0px 100px 0px 0px;
+
+}
+
+#txtp {
+  display: flex;
+  position: static;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  justify-content: center;
+
+  color: #506C53;
+
+  margin: 0px 100px 14px 0px;
+  
+}
+
+#txtEmail {
+  position: static;
+  float: left;
+
+  outline: none;
+  border-radius: 3px;
+  background: #FFFEFE;
+  border: 1px solid #4F8865;
+  border-radius: 4px;
+
+  width: 290px;
+  height: 40px;
+}
+
+#elemButton {
+  float: left;
+  position: static;
+
+  width: 90px;
+  height: 44px;
+  margin: 0px 0px 0px 8px;
+
+  background: #506d53;
+  border: 1px solid #506C53;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  color: white;
+
+  cursor: pointer;
+  transition-duration: 0.5s;
+  
+}
+
+#elemButton:hover {
+  background-color: #465847;
+  color: white;
+}
+
+ /*
+    Rede Sociais Footer
+  */
+  
+  .redesSocial img {
+    position: absolute;
+  }
+  
+  #icon01 {
+    position: static;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+  }
+  
+  #icon02, #icon03, #icon04, #icon05, #icon06 {
+    position: static  ;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+    margin-left: 25px;
+    
+  }
+  
+.redesSocial, a {
+  text-decoration: none;
+}
+
+/*
+  Logo / Name
+*/
+
+.logoName {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0%;
+  padding: 0%;
+}
+
+#logoFooter {
+  display: flex;
+  position: static;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+}
+
+#txtLogoName01 {
+  margin: 15px 0px 0px 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #B063FF;
+}
+
+#txtLogoName02 {
+  margin: 4px 0px 10px 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #B063FF;
+}
+
+
+/*
+  Apoiadores
+*/
+
+.apoiadores {
+  display: flex;
+  position: static;
+
+  flex-direction: column;
+  
+}
+
+#txtApoiadores {
+  display: flex;
+  position: static;
+
+  justify-content: center;
+  margin: 0%;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+
+  color: #273528;
+}
+
+.allApoiadoresTop {
+  display: flex;
+  flex-direction: row;
+
+}
+#iconApoiadores01, #iconApoiadores02, #iconApoiadores03, #iconApoiadores04 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
+
+.allApoiadoresEnd {
+  display: flex;
+  flex-direction: row;
+}
+
+#iconApoiadores05, #iconApoiadores06, #iconApoiadores07, #iconApoiadores08 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
+
+/*
+  copyright
+*/
+
+#copyright {
+  display: flex;
+  position: static;
+  background-color: #506C53;
+  
+  padding: 3px;
+
+  font-style: normal;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+}
+
+#txtcoryright, a {
+  color: #A9E8AF;
+  text-decoration: none;
+}
+
+  
+#questCadastro {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#questCadastroTermo {
+  display: flex;
+  flex-direction: column;
+}
+  /* botão de Login */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+* {box-sizing: border-box;}
+.open-button {
+background-color: #b063ff;
+color: white;
+padding: 13px 5px;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+position: relative;
+bottom: 20px;
+right: -500px;
+width: 160px;
+border-radius: 50px;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: #a9e8af;
+border-style: solid;
+border-color: seagreen;
+bottom: 792px;
+right: 12px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px -10px;
+border: none;
+cursor: pointer;
+width: 90%;
+margin-bottom: 10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}

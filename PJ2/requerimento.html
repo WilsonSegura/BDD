@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Sem Fronteiras</title>
+
+    <link rel="icon" type="image/png"
+        href="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png" />
+
+    <link rel="stylesheet" href="css/requerimento.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-barra">
+
+                <div class="search-box">
+                    <div class="row">
+                        <input type="text" id="input-box" autocomplete="off">
+                        <button type="submit"><img src="https://trello.com/1/cards/6415fa7fa0463b928860f307/attachments/643dc8e57d8a22909cc4361c/previews/643dc8e67d8a22909cc43624/download/LupaRoxa.png"></button>
+                    </div>
+                </div>
+        </div>
+
+        <nav class="header-botoes">
+            <a href="home.html">
+                <button type="submit" class="btn">Home</button>
+            </a>
+            <a href="dadosDoacao.html">
+                <button type="submit" class="btn">Doar</button>
+            </a>
+            <a href="doacaoMonetaria.html">
+                <button type="submit" class="btn">Ajuda Monetária</button>
+            </a>
+        </nav>
+
+        <div class="PopUpLogin">
+            
+            <img src="https://trello.com/1/cards/63ffa5897916089f7cd3e4db/attachments/643ef96421929a355efb832d/previews/643ef96521929a355efb8332/download/logo.png"
+            height="70px" width="70px" id="logo">
+
+            <button class="open-button" onclick="openForm()">Fazer Login</button>
+
+            <!-- The form -->
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Senha" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                </form>
+            </div>
+
+            <!-- script do formulario login/pop-up-->
+            <script>
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+
+        </div>
+    </div>
+
+    <!-- FIM DO HEADER-->
+
+    <!-- body -->
+
+    <div class="corpo">
+
+        <main id="mainDoacao">
+
+            <h1>Requerimento</h1>
+
+            <!-- select das categorias de doação-->
+
+            <div id="corpoRequerimento">
+
+            <div class="formDoacao">
+                <label for="select_campanhasDoacao" id="labelFormDoacao">Qual a categoria do produto</label>
+                <form action="categoriasDoacao">
+                    <select class="campanhasDoacao">
+                        <option value="0">Produtos de higiene</option>
+                        <option value="1">Produtos de Limpeza</option>
+                        <option value="2">Medicamentos</option>
+                        <option value="3">Roupas</option>
+                        <option value="4">Alimentos</option>
+                        <option value="5">Ração/medicamentos para pets</option>
+                    </select>
+                </form>
+            </div>
+
+
+            <!-- input da quantidade da doação-->
+
+            <div class="formDoacao">
+                <label for="DoacaoQuant" id="labelDoacaoQuat">Qual a quantidade?</label>
+                <form action="quantDoacao">
+                    <input type="number" placeholder="0" id="inputQuantDoacao">
+                </form>
+            </div>
+
+            <div id="textAreaDoacao">
+                <label for="" style="font-size: 1.5em; color: rgba(0, 0, 0, 0.5); padding-left: 20px;"> Descrição do item:</label>
+                <textarea name="descricaoItens" id="descricaoItens" style="width: 500px; height: 250px; resize: none; font-size: 1.3em;" ></textarea>
+            </div>
+
+            </div>
+
+            <div id="divBtnRequerimento">
+                <div class="btnItemDoacao">
+                <button type="submit" class="adicionarItem" style="font-size: 1.3em; color: #506C53;">Adicionar Item</button>
+                </div>
+            </div>
+
+            
+
+        </main>
+
+        
+        <!--linha que separar main do aside-->
+
+        
+        <hr id="linhaDoacao">
+
+
+        <!-- aside-->
+
+        <aside id="asideDoacao">
+                <div id="itensAdicionados">
+
+                    <h3 id="textBoxDoados" style="font-size: 1.5em; color: #506C53;">Itens Adicionados</h3>
+
+                    <div id="caixaAdicionados">
+                        <div class="caixaDoado">
+
+                            <!-- <div class="divTextDoados">
+                            <p class="textItensDoados">Produtos de higiene</p>
+                            </div>
+
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">4</p>
+                            </div>
+                             
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Produtos de limpeza</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">20</p>
+                            </div>
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Roupas</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">34</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Alimentos</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">14</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">medicamentos</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">22</p>
+                            </div>
+
+                        </div>
+
+                        <div class="caixaDoado">
+
+                            <div class="divTextDoados">
+                                <p class="textItensDoados">Ração/medicamentos para pets</p>
+                            </div>
+    
+                            <div class="divTraçoDoados">
+                                <p class="textItensDoados">-</p>
+                            </div>
+    
+                            <div class="divQuantDoados">
+                                <p class="textItensDoados">49</p>
+                            </div> -->
+
+                        </div>
+
+                        
+                </div>
+
+                <div id="formDoacao">
+
+                    <div class="inputEntrega">
+
+                    <label for="endereco" style="font-size: 1.3em; color: #506C53;">Endereço de entrega</label>
+                    <INput type="text" id="enderecoIntrega"></INput>
+
+                    </div>
+
+                    <div class="inputEntrega">
+
+                    <label for="cidade" style="font-size: 1.3em; color: #506C53;">Cidade</label>
+                    <INput type="text" id="cidade"></INput>
+    
+                    </div>
+
+                    <div class="inputEntrega">
+
+                        <label for="CEP" style="font-size: 1.3em; color: #506C53;">CEP</label>
+                        <INput type="text" id="cep" placeholder="00000-000"></INput>
+        
+                    </div>
+    
+                    <div class="inputEntrega">
+
+                        <label for="telefone" style="font-size: 1.3em; color: #506C53;">Telefone</label>
+                        <INput type="text" id="telefone" placeholder="( 00 ) 00000 - 0000"></INput>
+        
+                    </div>
+
+                    <div class="inputEntrega">
+
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a hora de entrega:</label>
+                        <INput type="time" id="hora" placeholder="10:00"></INput>
+        
+                    </div>
+
+                    <div class="inputEntrega">
+
+                        <label for="cidade" style="font-size: 1.3em; color: #506C53;">Selecione a data</label>
+                        <INput type="date" id="dataEntrega" placeholder="14 / 06 / 2023"></INput>
+        
+                    </div>
+
+
+
+                </div>
+
+                <div id="btnDoar">
+                    <button type="submit" id="itemDoado" style="font-size: 1.3em; color: #506C53;">Finalizar</button>
+                </div>
+
+        </aside>
+
+    </div>
+
+    <!-- FIM DO body-->
+
+    <!-- footer-->
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="allFooter">
+
+                <!-- Email / Assinar-->
+
+                <div class="textoAssinar">
+                    <h3 id="txth3">Fique conectado</h3>
+                    <p id="txtp">Receba atualizações e novas<br>notificações sobre nosso projeto.</p>
+
+
+                    <form action="Assinar o Email" id="allEmailButton">
+                        <input type="email" id="txtEmail" placeholder="Email:">
+                        <button id="elemButton">Assinar</button>
+                    </form>
+
+                    <nav class="allRedesSociais">
+                        <a href="#">
+                            <img id="icon01" src="img/RedesSocias/Instagram.png" alt="iconInstagram">
+                        </a>
+                        <a href="#">
+                            <img id="icon02" src="img/RedesSocias/Whatsapp.png" alt="iconWhatsapp">
+                        </a>
+                        <a href="#">
+                            <img id="icon03" src="img/RedesSocias/Facobook.png" alt="iconFacebook">
+                        </a>
+                        <a href="#">
+                            <img id="icon04" src="img/RedesSocias/Outlook.png" alt="iconOutlook">
+                        </a>
+                        <a href="#">
+                            <img id="icon05" src="img/RedesSocias/Twitter.png" alt="iconTwitter">
+                        </a>
+                        <a href="#">
+                            <img id="icon06" src="img/RedesSocias/Gmail.png" alt="iconGmail">
+                        </a>
+                    </nav>
+                </div>
+
+
+                <!-- Logo / Name -->
+
+                <nav class="logoName">
+                    <a href="#">
+                        <img id="logoFooter" src="img/Logo/Logo.png" alt="Logo Do footer">
+                    </a>
+                    <p id="txtLogoName01">A doação transforma, o amor<br> abstrato em um ato concreto.</p>
+                    <p id="txtLogoName02">-Ajuda Sem Fronteiras</p>
+                </nav>
+
+                <!-- Apoiadores -->
+
+                <div class="apoiadores">
+                    <p id="txtApoiadores">Empresas que apoiam nossa campanha</p>
+
+                    <nav class="allApoiadoresTop">
+                        <a href="#">
+                            <img id="iconApoiadores01" src="img/Apoiadores/PagSeguro.png"
+                                alt="Icon Apoiadores PagSeguro">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores02" src="img/Apoiadores/AmericanExpress.png"
+                                alt="Icon Apoiadores AmericanExpress">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores03" src="img/Apoiadores/Santander.png"
+                                alt="Icon Apoiadores Santander">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores04" src="img/Apoiadores/Nubank.png" alt="Icon Apoiadores Nubank">
+                        </a>
+                    </nav>
+                    <nav class="allApoiadoresEnd">
+                        <a href="#">
+                            <img id="iconApoiadores05" src="img/Apoiadores/PayPal.png" alt="Icon Apoiadores PayPal">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores06" src="img/Apoiadores/BancodoBrasil.png"
+                                alt="Icon Apoiadores BancodoBrasil">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores07" src="img/Apoiadores/Bradesco.png" alt="Icon Apoaidores Bradesco">
+                        </a>
+                        <a href="#">
+                            <img id="iconApoiadores08" src="img/Apoiadores/PicPay.png" alt="Ico Apoaidores PicPay">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coryright -->
+    <div id="copyright">
+        <a href="#">
+            <p id="txtcoryright">copyright © 2023<br>Todos os direitos reservados</p>
+        </a>
+    </div>
+
+    <!-- FIM do footer -->
+
+</body>
+
+</html>

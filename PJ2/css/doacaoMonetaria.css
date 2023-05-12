@@ -1,0 +1,918 @@
+* {
+    font-family: 'Anuphan', sans-serif;
+}
+
+
+body{
+  margin: 0%;
+  background: fixed;
+  
+  background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 3px;
+    background-color: #A9E8AF;
+    color: violet; 
+    margin: auto;        
+}
+
+
+.logo-barra{
+  display: flex;
+  align-items: center; 
+  margin: auto;    
+}
+
+#input-box {
+  padding-left: 45px;
+  border-radius: 40px;
+  height: 40px;
+  margin-top: 20px;
+  position: static;
+}
+
+.search-box{
+  width: 1000px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 6px 25px;
+  justify-content: right;
+  margin: auto; 
+  
+}
+
+.search-box input {
+background: #fff;
+flex: 1;
+border: 0;
+outline: none;
+padding: auto;
+font-size: 20px;
+height: 28px;
+width: 980px;
+color: #B063FF;
+margin: auto;
+
+}
+
+.row{
+display: flex;
+flex-direction: row-reverse;
+
+align-items: center;
+
+}
+
+.row button img {
+  width: 29px;
+  border-radius: 25px;
+  position: relative;
+  right: 1px;
+  }
+
+.row button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  right: -33px;
+  top: 11px;
+  }
+
+
+.header-botoes{
+    display: flex;
+    width: 905px;
+    height: 85px;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 26px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #B063FF;
+    width: 220px;
+    height: 37px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    background-color: #B063FF;
+    color: white;
+  }
+
+  #logo{
+    position: relative;
+    height: 70px; 
+    width: 70px;
+    right: 470px;
+  }
+  
+  #linkImgLogo {
+    text-decoration: none;
+  }
+
+  /* botão de Login */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+* {box-sizing: border-box;}
+.open-button {
+background-color: #b063ff;
+color: white;
+padding: 13px 5px;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+position: relative;
+bottom: 4px;
+right: -528px;
+width: 160px;
+height: 41px;
+border-radius: 50px;
+
+}
+
+/* The popup form - hidden by default */
+
+.PopUpLogin {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.form-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: #a9e8af;
+border-style: solid;
+border-color: seagreen;
+bottom: 792px;
+right: 12px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px -10px;
+border: none;
+cursor: pointer;
+width: 90%;
+margin-bottom: 10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+.feedback textarea {
+width: 650px;
+  height: 200px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  resize: none;
+  border-radius: 10px;
+  border: 3px solid #506d53;
+}
+
+/*
+  Corpo
+*/
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+  .corpo {
+    margin-top: inherit;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #4CAF50;
+    
+    background: #A9E8AF;
+    font-size: 20px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+  }
+
+.corpo h1 {
+  color: #273528;
+  padding: 0%;
+  margin: 0px 0px 32px 0px;
+}
+
+/*
+  Wearpper
+*/
+
+.wrapperCorpo {
+  max-width: 1000px;
+  padding-top: 59px;
+  margin: auto;
+}
+
+/*
+  Titulo do Corpo
+*/
+
+#tiluloCorpo {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 69px;
+
+  color: #273528;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*
+    OutrasPessoas / Beneficente / Valor / Img Doador
+*/
+/*
+    Registro
+*/
+
+.registro {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+/*
+    All Registro
+*/
+
+.allRegistro {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*
+    Categoria de Campanhas / Beneficente / Monetario
+*/
+
+.campanhas, .beneficentes, #inputMonetario {
+  box-sizing: border-box;
+
+  width: 490px;
+  height: 67px;
+
+  background: #FFFFFF;
+
+  border: 4px solid #506C53;
+  border-radius: 10px;
+
+  font-size: 32px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.campanhas, .beneficentes, option {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+    ImgDoador / txtDoador
+*/
+
+.imgDoador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+    Icon de Serviço
+*/
+
+.iconServico {
+  margin-top: 40px;
+}
+
+#iconServico01, #iconServico02, #iconServico03, #iconServico04 { 
+    margin-right: 30px;
+}
+
+/*
+  Cartão / Img Cartão / Cadastros
+*/
+
+.cartao {
+  display: flex;
+  position: static;
+  justify-content: center;
+
+  margin-top: 16px;
+}
+
+.superiorTextoInput  {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+
+  margin-top: 223px;
+  margin-left: 270px; 
+}
+
+#txtTituloCartao {
+  position: static;
+  float: right;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  margin: 0%;
+  padding: 0%;
+}
+
+#txtNameCartao {
+  position: static;
+  float: right;
+
+  width: 641px;
+  height: 64px; 
+
+  background: #F0F402;;
+
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  outline: none;
+
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.700);
+}
+
+.superiorNumeroValidoCvv {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+
+  margin-top: 430px;
+}
+
+#txtTitulo {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 390px;
+}
+
+#txtNumeroCartao  {
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  width: 651px;
+  height: 0%;
+  margin: 0px 10px 0px 0px;
+  padding: 0%;
+}
+
+#txtValidoAte {
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  width: 124px;
+  height: 0%;
+  margin: 0px 15px 0px 0px;
+  padding: 0%
+}
+
+#txtCVV {
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.700);
+
+  width: 124px;
+  height: 0%;
+  margin: 0px 0px 0px 0px;
+  padding: 0%
+}
+
+#numeroCartao {
+  width: 641px;
+  height: 64px;
+
+  background: #F0F402;
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  font-size: 40px;
+  outline: none;
+  -webkit-appearance: none;
+
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#dateValido {
+  width: 124px;
+  height: 64px;
+
+  background: #F0F402;
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  outline: none;
+  text-align: center;
+  font-size: 30px;
+  
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  
+}
+
+
+
+#cvv {
+  width: 124px;
+  height: 64px;
+
+  background: #F0F402;
+  border: 3px solid rgba(80, 108, 83, 0.49);
+  border-radius: 19px;
+  font-size: 36px;
+  outline: none;
+  -moz-appearance: textfield;
+
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+  Código Pix
+*/
+
+#txtDescricaoPix {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #506C53;
+}
+
+.allDescricao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#txtDescricaoPix {
+  padding: 0%;
+  margin: 54px 0px 0px 0px;
+}
+
+#imgPix {
+  width: 150px;
+  height: 150px;
+}
+
+
+.allTextoDescricaoPix p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0%;
+  padding: 0%;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #506C53;
+}
+
+/*
+  Botão Doar
+*/
+
+.mainButton {
+  display: flex;
+  justify-content: center;
+
+  margin: 50px;
+}
+
+.btnDoar {
+  background-color: white;
+  color: black;
+  border: 3px solid #465847;
+  
+  border-radius: 30px;
+  width: 300px;
+  height: 55px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 32px;
+  margin: 3%; 
+  transition-duration: 0.5s;
+  cursor: pointer;
+  
+}
+
+.btnDoar:hover {
+
+  background-color: #273528;
+  color: white;
+}
+
+
+/*
+  Footer
+*/
+
+
+.footer {
+  margin-top: 100px;
+  background-color: #A9E8AF;
+
+  padding: 10px;
+}
+
+/*
+  Wrapper
+*/
+
+.wrapperFooter {
+  max-width: 1320px;
+  margin: auto;
+}
+
+/*
+  All Foooter
+*/
+
+.allFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 30px;
+}
+
+.allFooter > div {
+  width: 400px;
+}
+
+
+/*
+  Email / Assinar
+*/
+.textoAssinar {
+  display: flex;
+  flex-direction: column;
+}
+
+#allEmailButton {
+  display: flex;
+  flex-direction: row;
+}
+
+#txth3 {
+  display: flex;
+  position: static;   
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  justify-content: center;
+
+  color: #273528;
+
+  margin: 0px 100px 0px 0px;
+
+}
+
+#txtp {
+  display: flex;
+  position: static;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  justify-content: center;
+
+  color: #506C53;
+
+  margin: 0px 100px 14px 0px;
+  
+}
+
+#txtEmail {
+  position: static;
+  float: left;
+
+  outline: none;
+  border-radius: 3px;
+  background: #FFFEFE;
+  border: 1px solid #4F8865;
+  border-radius: 4px;
+  font-size: 19px;
+
+  width: 290px;
+  height: 40px;
+}
+
+#elemButton {
+  float: left;
+  position: static;
+
+  width: 90px;
+  height: 44px;
+  margin: 0px 0px 0px 8px;
+
+  background: #506d53;
+  border: 1px solid #506C53;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  color: white;
+
+  cursor: pointer;
+  transition-duration: 0.5s;
+  
+}
+
+#elemButton:hover {
+  background-color: #465847;
+  color: white;
+}
+
+ /*
+    Rede Sociais Footer
+  */
+  
+  .redesSocial img {
+    position: absolute;
+  }
+  
+  #icon01 {
+    position: static;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+  }
+  
+  #icon02, #icon03, #icon04, #icon05, #icon06 {
+    position: static  ;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+    margin-left: 25px;
+    
+  }
+  
+.redesSocial, a {
+  text-decoration: none;
+}
+
+/*
+  Logo / Name
+*/
+
+.logoName {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0%;
+  padding: 0%;
+}
+
+#logoFooter {
+  display: flex;
+  position: static;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+}
+
+#txtLogoName01 {
+  margin: 15px 0px 0px 0px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #B063FF;
+}
+
+#txtLogoName02 {
+  margin: 4px 0px 10px 0px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #B063FF;
+}
+
+
+/*
+  Apoiadores
+*/
+
+.apoiadores {
+  display: flex;
+  position: static;
+
+  flex-direction: column;
+  
+}
+
+#txtApoiadores {
+  display: flex;
+  position: static;
+
+  justify-content: center;
+  margin: 0%;
+
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+
+  color: #273528;
+}
+
+.allApoiadoresTop {
+  display: flex;
+  flex-direction: row;
+
+}
+#iconApoiadores01, #iconApoiadores02, #iconApoiadores03, #iconApoiadores04 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
+
+.allApoiadoresEnd {
+  display: flex;
+  flex-direction: row;
+}
+
+#iconApoiadores05, #iconApoiadores06, #iconApoiadores07, #iconApoiadores08 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
+
+/*
+  copyright
+*/
+
+#copyright {
+  display: flex;
+  position: static;
+  background-color: #506C53;
+  
+  padding: 3px;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+}
+
+#txtcoryright, a {
+  color: #A9E8AF;
+  text-decoration: none;
+}

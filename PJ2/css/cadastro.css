@@ -1,0 +1,581 @@
+body{
+  margin: 0%;
+  background: fixed;
+  font-family: 'Anuphan', sans-serif;
+  background-image: url(https://trello.com/1/cards/6446d0d3f429609ff9e3aea5/attachments/6446d1489431ff7a1efc7b47/previews/6446d14a9431ff7a1efc7b58/download/BackgroundPJ2_1.png);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1px;
+    background-color: #A9E8AF;
+    margin: auto;        
+}
+
+.allLogoSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-barra{
+    display: flex;
+    align-items: center; 
+    margin: auto;   
+}
+
+.logo-barra img {
+  margin: 56px 77px 0px 0px;
+  border: 1px solid #91CB96;
+  border-radius: 10px;
+}
+
+.search-box{
+  width: 1000px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 25px; 
+  justify-content: right;
+  margin-top: 56px;
+  border: 3px solid #B063FF;
+}
+
+.search-box input {
+  background: #fff;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: auto;
+  font-size: 20px;
+  height: 28px;
+  width: 980px;
+  color: #B063FF;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+.row button img {
+  width: 30px;
+}
+
+.row button {
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  cursor: pointer; 
+}
+
+
+.header-botoes{
+    display: flex;
+    width: 905px;
+    height: 85px;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 26px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: white;
+    color: black;
+    border: 3px solid #B063FF;
+    width: 220px;
+    height: 37px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 3%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background-color: #B063FF;
+    color: white;
+  }
+
+  .corpo {
+    margin-top: inherit;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #4CAF50;
+    
+    background: #A9E8AF;
+    font-size: 20px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+    margin-top: 50px  ;
+  }
+
+.corpo h1 {
+  color: #4CAF50;
+  padding: 50px;
+  
+}
+
+.wrapperCorpo {
+  max-width: 1000px;
+  padding-top: 59px;
+  margin: auto;
+}
+
+
+.cadastro{
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 1%; 
+  padding-bottom: 1%; 
+  font-size: 20px;
+  color: #000000;
+  padding-inline: unset;
+  white-space: nowrap;
+   
+}
+
+.txtNameCadastro {
+  display: flex;
+  flex-direction: row;
+}
+
+#caixaCadastroText {
+  display: flex;
+  justify-content: center;
+}
+
+#textCadastroText {
+  font-size: 2.3em;
+}
+
+.txtNameCadastro, p {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0%;
+  padding: 1px;
+}
+
+.cadastro input {
+  
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4CAF50;
+  font-size: 20px;
+  color: #000000;
+}
+
+.cadastro select {
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #4CAF50;
+  
+}
+
+.botao img {
+  cursor: pointer;
+  display: flex;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #4CAF50;
+  border: 5%;
+  width: 210px;
+}
+
+.coluna{
+  float: left;
+  align-items: center;
+  display: flex;
+}
+.alinhar h3{
+  font-size: 20px;
+  
+}
+.alinhar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  margin-top: 30p;
+}
+.cadastro-nome{
+  width: 742px;
+}
+.cadastro-usuario{
+  width: 748px;
+}
+.cadastro-cpf{
+  width: 230px;
+
+}
+.cadastro-nascimento{
+  width: 380px;
+
+}
+.cadastro-telefone{
+  width: 380px;
+}
+.cadastro-email{
+  width: 480px;
+  
+}
+input[type=text] {
+  height: 30px;
+}
+.cadastro-senha{
+  width: 480px;
+  height: 30px;
+}
+.check-box{
+  width: 26px;
+  height: 30px;
+}
+.check-box select{
+  border-radius: 20%;
+  border-style: double;
+  border-color: #B063FF;
+}
+
+#termosCadastro {
+  width: 456px;
+}
+
+/*
+  Footer
+*/
+
+#footer {
+  margin-top: 100px;
+  background-color: #A9E8AF;
+
+  padding: 10px;
+}
+
+/*
+  Wrapper
+*/
+
+.wrapper {
+  max-width: 1320px;
+  margin: auto;
+}
+
+/*
+  All Foooter
+*/
+
+.allFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 30px;
+}
+
+.allFooter > div {
+  width: 400px;
+}
+
+
+/*
+  Email / Assinar
+*/
+.textoAssinar {
+  display: flex;
+  flex-direction: column;
+}
+
+#allEmailButton {
+  display: flex;
+  flex-direction: row;
+}
+
+#txth3 {
+  display: flex;
+  position: static;   
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  justify-content: center;
+
+  color: #273528;
+
+  margin: 0px 100px 0px 0px;
+
+}
+
+#txtp {
+  display: flex;
+  position: static;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  justify-content: center;
+
+  color: #506C53;
+
+  margin: 0px 100px 14px 0px;
+  
+}
+
+#txtEmail {
+  position: static;
+  float: left;
+
+  outline: none;
+  border-radius: 3px;
+  background: #FFFEFE;
+  border: 1px solid #4F8865;
+  border-radius: 4px;
+
+  width: 290px;
+  height: 40px;
+}
+
+#elemButton {
+  float: left;
+  position: static;
+
+  width: 90px;
+  height: 44px;
+  margin: 0px 0px 0px 8px;
+
+  background: #506d53;
+  border: 1px solid #506C53;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  color: white;
+
+  cursor: pointer;
+  transition-duration: 0.5s;
+  
+}
+
+#elemButton:hover {
+  background-color: #465847;
+  color: white;
+}
+
+ /*
+    Rede Sociais Footer
+  */
+  
+  .redesSocial img {
+    position: absolute;
+  }
+  
+  #icon01 {
+    position: static;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+  }
+  
+  #icon02, #icon03, #icon04, #icon05, #icon06 {
+    position: static  ;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin-top: 10px;
+    margin-left: 25px;
+    
+  }
+  
+.redesSocial, a {
+  text-decoration: none;
+}
+
+/*
+  Logo / Name
+*/
+
+.logoName {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0%;
+  padding: 0%;
+}
+
+#logoFooter {
+  display: flex;
+  position: static;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+}
+
+#txtLogoName01 {
+  margin: 15px 0px 0px 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #B063FF;
+}
+
+#txtLogoName02 {
+  margin: 4px 0px 10px 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #B063FF;
+}
+
+
+/*
+  Apoiadores
+*/
+
+.apoiadores {
+  display: flex;
+  position: static;
+
+  flex-direction: column;
+  
+}
+
+#txtApoiadores {
+  display: flex;
+  position: static;
+
+  justify-content: center;
+  margin: 0%;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+
+  color: #273528;
+}
+
+.allApoiadoresTop {
+  display: flex;
+  flex-direction: row;
+
+}
+#iconApoiadores01, #iconApoiadores02, #iconApoiadores03, #iconApoiadores04 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
+
+.allApoiadoresEnd {
+  display: flex;
+  flex-direction: row;
+}
+
+#iconApoiadores05, #iconApoiadores06, #iconApoiadores07, #iconApoiadores08 {
+  position: static;
+  
+  text-decoration: none;
+  
+  margin-top: 10px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 70px;
+  height: 30px;
+}
+
+/*
+  copyright
+*/
+
+#copyright {
+  display: flex;
+  position: static;
+  background-color: #506C53;
+  
+  padding: 3px;
+
+  font-style: normal;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+}
+
+#txtcoryright, a {
+  color: #A9E8AF;
+  text-decoration: none;
+}
+
+  
+#questCadastro {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#questCadastroTermo {
+  display: flex;
+  flex-direction: column;
+}
