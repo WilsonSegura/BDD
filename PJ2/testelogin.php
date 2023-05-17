@@ -23,13 +23,13 @@
         {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location: Homelogado.php');
+            header('Location: Home.php');
         }
         else
         {
             $_SESSION['email'] = $email;
             $_SESSION['senha'] = $senha;
-            header('Location: Home.php');
+            header('Location: HomeLogado.php');
         }
     }
     else

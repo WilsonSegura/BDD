@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    include_once('config.php');
+    // print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: Home.php');
+    }
+    $logado = $_SESSION['email'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

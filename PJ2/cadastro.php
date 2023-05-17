@@ -29,7 +29,7 @@
      $senha = $_POST['senha'];
 
      $result = mysqli_query($conexao, "INSERT INTO cadastro_usuario(nome,nome_user,cpf,data_nasc,sexo,telefone,email,senha)
-      VALUES ('$nome','$nome_user','$cpf','$data_nasc',' $sexo',' $telefone',' $email','$senha')");
+      VALUES ('$nome','$nome_user','$cpf','$data_nasc','$sexo','$telefone','$email','$senha')");
     } 
    
 ?>
